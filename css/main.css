@@ -110,11 +110,12 @@ body {
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
+  font-weight: 400;
   display: flex;
   justify-content: space-between; /*to have space between the boxes*/
-  flex-flow: row wrap;
-  align-items: stretch; /* makes the boxes stretch over whole wrapper */
+  flex-flow:  wrap;
+  align-items: baseline;
+   /* makes the boxes stretch over whole wrapper */
 }
 
 .div-1, .div-2, .div-3 {
@@ -128,7 +129,7 @@ body {
   width: 30%;
   border-left: 2px solid orange;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-around;
   padding: 10px;
 }
 
