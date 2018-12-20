@@ -99,26 +99,48 @@ textarea {
 html {
   background-color: #fff;
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 2em;
   font-size: 1.25em;
-  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.wrapper {
+header,
+footer {
+  display: flex;
+  background: powderblue;
+  width: 100%;
+  padding: 2em 0.5em; /* 1em = 16px */
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 2em 0.5em;
+}
+
+
+.flex-container {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 400;
   display: flex;
   justify-content: space-between; /*to have space between the boxes*/
-  flex-flow:  wrap;
-  align-items: baseline;
-   /* makes the boxes stretch over whole wrapper */
+  flex-flow: row wrap;
+  align-items: stretch; /* makes the boxes stretch over whole wrapper */
+
 }
 
-.div-1, .div-2, .div-3 {
+.flex-item { /* to format the text within the boxes */
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #fff;
   line-height: 1.2em;
@@ -133,8 +155,9 @@ body {
   padding: 10px;
 }
 
-
-
+p span {
+  font-weight: 700;
+}
 
 /* ==========================================================================
    Helper classes
